@@ -1,5 +1,8 @@
+import homeSlider from './homeSlider';
 const App = {
-  init() {}
+  init() {
+    homeSlider.init();
+  }
 };
 
 export default App;

@@ -16,6 +16,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.5.2",
     "babelify": "^8.0.0",
+    "bootstrap": "4.0.0-alpha.6",
     "browser-sync": "^2.2.1",
     "browserify": "^14.5.0",
     "del": "^2.2.0",
@@ -60,7 +61,7 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "jquery": "^3.2.1",
+    "jquery": "^3.3.1",
     "lity": "^2.3.0",
     "scrollreveal": "^3.3.6",
     "slick-carousel": "^1.8.1",
