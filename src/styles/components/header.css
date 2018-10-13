@@ -18,5 +18,14 @@
   }
 }
 .navbar-toggler {
-  background: red;
+  align-self: flex-end;
+  margin-right: 20px;
+}
+.navbar-toggler-icon {
+  background-image: url('/images/nav-icon.svg');
+}
+.navbar-collapse  {
+  .navbar-nav {
+    flex-direction: column;
+  }
 }

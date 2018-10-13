@@ -1,0 +1,19 @@
+.banner-content {
+  display: block;
+  color: #fff;
+  padding-block: 40px;
+}
+.banner-content:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.7);
+}
+.banner-title {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+.banner-description {
+  width: 60%;
+  margin: 0 auto;
+}
