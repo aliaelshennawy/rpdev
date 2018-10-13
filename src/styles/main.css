@@ -1,5 +1,6 @@
 /* Vendors */
 @import 'slick-carousel/slick/slick.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
 /* Settings – used with preprocessors and contain font, colors definitions, etc. */
 
 /* Tools – globally used mixins and functions. It’s important not to output any CSS in the first 2 layers. */
@@ -17,6 +18,10 @@
 
 /* Components – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components */
 @import 'components/home-slider.css';
+@import 'components/card.css';
+@import 'components/explore.css';
+@import 'components/banner.css';
+@import 'components/buttons.css';
 
 /* Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class */
 @import 'utilities/floats.css';
