@@ -24,6 +24,7 @@
 @import 'components/buttons.css';
 @import 'components/header.css';
 @import 'components/footer.css';
+@import 'components/form.css';
 
 /* Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class */
 @import 'utilities/floats.css';
