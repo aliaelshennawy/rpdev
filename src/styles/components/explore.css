@@ -1,0 +1,58 @@
+.explore-wrapper {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding-block: 80px; 
+  position: relative;
+  width: 100%;
+}
+.explore-wrapper:before {
+  content: '';
+  display: inline-block;
+  background-image: url('/images/crane-2.png');
+  width: 300px;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  background-position: -60px 50%; 
+  @media (max-width: 768px) {
+    content: none;
+  }
+  @media (max-width: 1024px) {
+    content: none;
+  }
+}
+.explore-wrapper:after {
+  content: '';
+  display: inline-block;
+  background-image: url('/images/crane.png');
+  width: 300px;
+  height: 250px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background-position: 80px 50%; 
+  @media (max-width: 768px) {
+    content: none;
+  }
+  @media (max-width: 1024px) {
+    content: none;
+  }
+}
+.explore-description {
+  max-width: 60%;
+  margin: 40px auto;
+}
+.explore-title {
+  font-size: 30px;
+}
+.explore-btn-wrapper {
+
+}
