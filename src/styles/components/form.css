@@ -1,6 +1,7 @@
 .form-wrapper {
   background: #0f0f0f;
   padding-block: 60px; 
+  width: 100%;
   .form-item-wrapper {
     width: 60%;
     margin: 0 auto;
