@@ -71,8 +71,29 @@
   padding-block: 40px; 
   box-sizing: border-box;
 }
+.people-contact-wrapper {
+  padding-block: 40px;
+}
 .people-item-content {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+}
+.people-contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.people-content {
+  width: 100%;
+  span {
+    display: block;
+  }
+  a {
+    display: block;
+  }
+}
+.people-contact-wrapper {
+  background: #fff;
+  color: #000;
 }
