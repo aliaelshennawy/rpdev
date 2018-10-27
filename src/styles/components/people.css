@@ -42,14 +42,13 @@
   max-width: 160px;
   height: 160px;
   background-color: rgba(255,0,0,0.7);
-  -webkit-animation: linkHover 1s forwards;
-  animation: linkHover 1s forwards;
+  animation: linkHover 1s forwards, opacity 3s forwards ;
 }
 .people-item:hover:after {
   overflow: hidden;
   visibility: hidden;
 }
-@keyframes Opacity {
+@keyframes opacity {
   0% { opacity:0
 }
   to{opacity:1}}
