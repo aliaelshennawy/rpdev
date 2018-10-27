@@ -8,6 +8,12 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    @media (max-width: 768px) {
+      position: static;
+      display: block;
+      margin-block: 20px;
+      transform: none;
+    }
   }
   video {
     width: 100%;
