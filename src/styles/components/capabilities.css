@@ -1,0 +1,129 @@
+.white-section {
+  background: #fff;
+  color: #000;
+  padding-block: 80px;
+}
+.title {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.gray-section {
+  color: #fff;
+  padding-block: 80px;
+  background: #000;
+  img {
+    width: 100%;
+  }
+}
+.banner-text-wrapper-general {
+  position: relative;
+  img {
+    height: 80vh;
+    object-fit: cover;
+    width: 100%;
+    /* -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0))); */
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 55%, transparent);
+  }
+}
+.banner-content-wrapper {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  z-index: 1;
+  width: 100%;
+  h1 {
+    color: #fff;
+    font-size: 60px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+  }
+  p {
+    max-width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 24px;
+  }
+} 
+.random-images-container {
+  margin-block: 80px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.random-image-1 {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 600px;
+  height: auto;
+  object-fit: contain;
+}
+.random-image-2 {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  width: 600px;
+  height: auto;
+  object-fit: contain;
+}
+.random-image-3 {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+.random-image-4 {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+.capabilities-banner-wrapper {
+  img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+}
+.capabilities-banner-content {
+  padding-block: 60px;
+}
+.small-img {
+  display: block;
+  width: 80%;
+  margin-block: 40px; 
+}
+@media (max-width: 1024px) {
+  .title {
+    font-size: 28px;
+  }
+  .random-images-container {
+    position: static;
+  }
+  .random-image-4 , .random-image-3 , .random-image-2 , .random-image-1 {
+    position: static;
+    width: 100%;
+  }
+  .capabilities-wrapper {
+    h1 {
+      font-size: 28px;
+    }
+  }
+  .gray-section {
+    .col-sm-6 {
+      padding-block: 40px;
+    }
+  }
+}

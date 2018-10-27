@@ -15,6 +15,7 @@
 /* Elements – styling for bare HTML elements (like H1, A, etc.). These come with default styling from the browser so we can redefine them here. */
 @import 'elements/body.css';
 /* Objects – class-based selectors which define undecorated design patterns, for example media object known from OOCSS */
+@import 'objects/tabs.css';
 
 /* Components – specific UI components. This is where majority of our work takes place and our UI components are often composed of Objects and Components */
 @import 'components/home-slider.css';
@@ -26,6 +27,8 @@
 @import 'components/footer.css';
 @import 'components/form.css';
 @import 'components/philosophy.css';
+@import 'components/capabilities.css';
+@import 'components/work.css';
 
 /* Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class */
 @import 'utilities/floats.css';

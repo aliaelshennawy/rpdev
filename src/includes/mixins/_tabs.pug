@@ -1,0 +1,10 @@
+mixin tabs(tabs)
+  .tabs__container#tab
+    .tabs__container-links
+      ul.tabs(role="tablist")
+        each tab, index in tabs
+          li(class=index === 0 ? 'active-tab' : '', role="presentation")
+            a.tab-title(href="#")
+              = tab
+    .tabs__container-content
+      block

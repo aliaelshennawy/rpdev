@@ -1,3 +1,49 @@
 .page-footer  {
   background: #000;
+  padding-block: 40px; 
+}
+.footer-details {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  a {
+    color: inherit;
+    display: block;
+  }
+}
+.footer-phone {
+  line-height: 70px;
+  @media(max-width: 767px) {
+    line-height: 20px; 
+  }
+}
+.footer-logo {
+  text-align: center;
+}
+.footer-copyright {
+  padding-top: 40px !important;
+  color: #848585;
+  font-size: 14px;
+}
+.footer-address {
+  text-align: left;
+  p {
+    line-height: 20px;
+    margin: 0;
+  }
+}
+@media(max-width: 767px) {
+  .page-footer {
+    .row {
+      display: block;
+      text-align: center;
+    }
+    .col + .col {
+      margin-top: 20px;
+    }
+    .footer-address {
+      text-align: center;
+    }
+  }
 }
