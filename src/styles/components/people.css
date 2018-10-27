@@ -1,0 +1,79 @@
+.our-people-wrapper {
+  background-color: #fff;
+  p {
+    color: #000;
+  }
+}
+.people-item {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  background: #ededed;
+  border-radius: 50%;
+  color: #000;
+  text-align: center;
+  box-sizing: border-box;
+  position: relative;
+  p {
+    margin: 0;
+    color: #000;
+  }
+}
+.people-item:hover {
+  p {
+    visibility: hidden;
+  }
+  span {
+    visibility: hidden;
+  }
+}
+.people-item:hover:before {
+  position: absolute;
+  content: "Send mail";
+  /* left: 50%; */
+  color: #fff;
+  top: 50%;
+  bottom: 0;
+  z-index: 1;
+  line-height: 160px;
+  display: inline-block;
+  border-radius: 50%;
+  width: 100%;
+  max-width: 160px;
+  height: 160px;
+  background-color: rgba(255,0,0,0.7);
+  -webkit-animation: linkHover 1s forwards;
+  animation: linkHover 1s forwards;
+}
+.people-item:hover:after {
+  overflow: hidden;
+  visibility: hidden;
+}
+@keyframes Opacity {
+  0% { opacity:0
+}
+  to{opacity:1}}
+@keyframes linkHover {
+  0% { width: 0;
+      height: 0;
+      opacity: 0;
+      left: 50%;
+      top: 35%;
+    }
+  to {
+    width: 100%;
+    opacity: 1;
+    height: 160px;
+    top: 0;
+    left: 0;
+  }
+}
+.people-row {
+  padding-block: 40px; 
+  box-sizing: border-box;
+}
+.people-item-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}

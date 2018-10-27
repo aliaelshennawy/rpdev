@@ -29,6 +29,7 @@
 @import 'components/philosophy.css';
 @import 'components/capabilities.css';
 @import 'components/work.css';
+@import 'components/people.css';
 
 /* Utilities – utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class */
 @import 'utilities/floats.css';
