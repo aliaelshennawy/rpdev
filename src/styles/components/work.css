@@ -21,3 +21,22 @@
     object-fit: contain; */
   }
 }
+
+
+/* Work 2 Styling */
+
+.work-2-tabs-wrapper {
+  background: #fff;
+  .work-tabs {
+    margin-block: 80px;
+  }
+  p {
+    margin-block: 40px;
+    color: #000;
+  }
+  video {
+    width: 100%;
+    /* height: 300px;
+    object-fit: contain; */
+  }
+}
