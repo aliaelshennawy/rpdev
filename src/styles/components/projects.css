@@ -1,0 +1,24 @@
+.projects {
+  img {
+    width: 100%;
+  }
+}
+.bold {
+  font-weight: bold;
+}
+.download-link {
+  display: inline-block;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+.download-link:before {
+  content: '';
+  display: inline-block;
+  background-size: contain; 
+  width: 25px;
+  height: 25px;
+  vertical-align: text-bottom;
+  background-image: url('/images/download.png');
+  background-repeat: no-repeat; 
+}
