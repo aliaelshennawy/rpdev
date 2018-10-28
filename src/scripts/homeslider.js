@@ -3,9 +3,10 @@ import Slick from 'slick-carousel';
 
 const homeSlider = {
   init() {
-    this.initializeSlider();
+    this.initializeHomeSlider();
+    this.initializeCapabilitiesSlider();
   },
-  initializeSlider() {
+  initializeHomeSlider() {
     $('.home-slider').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -35,6 +36,13 @@ const homeSlider = {
           }
         }
       ]
+    });
+  },
+  initializeCapabilitiesSlider() {
+    $('.random-images-container').slick({
+      dots: true,
+      arrows: false,
+      fade: true
     });
   }
 };

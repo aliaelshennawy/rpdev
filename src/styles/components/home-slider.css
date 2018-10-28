@@ -63,11 +63,12 @@
     transform: translateY(-50%);
     position: absolute;
 		background: url('../images/gallery-arrow-desktop-left.svg') no-repeat center center / 40px;
-		width: 60px;
+		width: 70px;
 		height: 100px;
 		text-indent: -9999px;
     cursor: pointer;
     border: none;
+    background-size: contain; 
   }
   .slick-next {
     right: 25px;
@@ -75,11 +76,12 @@
     transform: translateY(-50%);
     position: absolute;
 		background: url('../images/gallery-arrow-desktop-right.svg') no-repeat center center / 40px;
-		width: 60px;
+		width: 70px;
 		height: 100px;
 		text-indent: -9999px;
     cursor: pointer;
     border: none;
+    background-size: contain; 
   }
   .slick-dots {
     position: absolute;
@@ -168,5 +170,50 @@
   }
   .home-slider .slick-next , .slick-prev {
     display: none !important;
+  }
+}
+.random-images-container {
+  .slick-dots {
+    position: absolute;
+    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+    padding: 0;
+    text-align: center;
+    li {
+      display: inline;
+      margin-left: 5px;
+      margin-right: 5px;
+      &.slick-active {
+        button {
+          position: relative;
+          height: 15px;
+          width: 15px;
+          border-radius: 50%;
+          background: #ED2029;
+        }
+      }
+    }
+    button {
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      padding: 0;
+      font-size: 0px;
+      background-color: transparent;
+      border: none;
+      position: relative;
+      height: 15px;
+      width: 15px;
+      border-radius: 50%;
+      background: #ededed;
+      &:focus {
+        &:active {
+          border: 1px solid #ED2029;
+          background: #ededed;
+        }
+      }
+    }
   }
 }
