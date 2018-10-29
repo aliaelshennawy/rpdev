@@ -172,7 +172,7 @@
     display: none !important;
   }
 }
-.random-images-container {
+.random-images-container , .projects-slider {
   .slick-dots {
     position: absolute;
     right: 0;

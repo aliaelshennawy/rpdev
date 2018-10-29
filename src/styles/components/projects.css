@@ -22,3 +22,28 @@
   background-image: url('/images/download.png');
   background-repeat: no-repeat; 
 }
+
+/* Project 2 */
+.projects-2 {
+  .white-section {
+    padding-block: 40px; 
+  }
+}
+.title-2 {
+  margin-block: 40px;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.link-2 {
+  margin-block: 20px;
+  display: block;
+  text-align: right;
+}
+.projects-slider {
+  /* img {
+    min-height: 650px;
+    object-fit: contain;
+  } */
+}

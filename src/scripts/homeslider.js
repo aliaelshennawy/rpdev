@@ -5,6 +5,7 @@ const homeSlider = {
   init() {
     this.initializeHomeSlider();
     this.initializeCapabilitiesSlider();
+    this.initializeProjectsSlider();
   },
   initializeHomeSlider() {
     $('.home-slider').slick({
@@ -43,6 +44,14 @@ const homeSlider = {
       dots: true,
       arrows: false,
       fade: true
+    });
+  },
+  initializeProjectsSlider() {
+    $('.projects-slider').slick({
+      dots: true,
+      arrows: false,
+      fade: true,
+      adaptiveHeight: true
     });
   }
 };
