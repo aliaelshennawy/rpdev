@@ -31,6 +31,13 @@
   text-decoration: none;
   color: #000;
 }
+.qoute {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 22px;
+  font-style: italic;
+}
 .people-item:hover:before {
   position: absolute;
   content: "Send mail";
