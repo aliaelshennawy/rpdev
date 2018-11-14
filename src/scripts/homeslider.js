@@ -38,6 +38,16 @@ const homeSlider = {
         }
       ]
     });
+    $('.home-slider').on('afterChange', function(event, slick, currentSlide) {
+      if (currentSlide == 3) {
+        $('.home-slider').slick('slickPause');
+        myVideo.play();
+      }
+    });
+    document.getElementById('myVideo').addEventListener('ended', myHandler, false);
+    function myHandler(e) {
+      $('.home-slider').slick('slickPlay');
+    }
   },
   initializeCapabilitiesSlider() {
     $('.random-images-container').slick({
