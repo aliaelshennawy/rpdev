@@ -110,8 +110,17 @@
   box-shadow: -1000px 0 0 #101010, 1000px 0 0 #101010;
   padding-block: 80px;
   text-align: center;
+  @media (max-width: 1024px) {
+    width: 100%;
+    box-shadow: none;
+    padding-inline: 40px;
+  }
 }
 @media (max-width: 1024px) {
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .banner-text-wrapper h1 {
     font-size: 30px;
   }
