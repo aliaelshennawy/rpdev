@@ -2,6 +2,9 @@
   background: #0f0f0f;
   padding-block: 40px; 
   width: 100%;
+  legend {
+    text-align: center;
+  }
   .form-item-wrapper {
     width: 60%;
     margin: 0 auto;

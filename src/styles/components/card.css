@@ -6,6 +6,9 @@
   cursor: pointer;
   height: 120vh;
   background-color: rgba(0,0,0,0.4); 
+  a {
+    display: inline-block;
+  }
   .card-wrapper-content {
     position: relative;
     p {

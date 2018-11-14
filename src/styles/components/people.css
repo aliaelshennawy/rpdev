@@ -38,6 +38,11 @@
   font-size: 22px;
   font-style: italic;
 }
+.company-info {
+  p {
+    margin-block: 5px;
+  }
+}
 .people-item:hover:before {
   position: absolute;
   content: "Send mail";

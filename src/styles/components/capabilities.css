@@ -78,6 +78,10 @@
   width: 80%;
   margin-block: 40px; 
 }
+.small-img {
+  width: 100%;
+  text-align: center;
+}
 @media (max-width: 768px) {
   .random-images-container {
     height: 300px;
