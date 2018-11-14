@@ -173,6 +173,7 @@
   }
 }
 .random-images-container , .projects-slider {
+  padding: 0;
   .slick-dots {
     position: absolute;
     right: 0;

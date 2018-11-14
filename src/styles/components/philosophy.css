@@ -105,6 +105,12 @@
     }
   }
 }
+.gray-content {
+  background-color: #101010;
+  box-shadow: -1000px 0 0 #101010, 1000px 0 0 #101010;
+  padding-block: 80px;
+  text-align: center;
+}
 @media (max-width: 1024px) {
   .banner-text-wrapper h1 {
     font-size: 30px;

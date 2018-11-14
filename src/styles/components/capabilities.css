@@ -28,8 +28,8 @@
 }
 .banner-content-wrapper {
   position: absolute;
-  top: 40%;
-  transform: translateY(-40%);
+  top: 70%;
+  transform: translateY(-70%);
   z-index: 1;
   width: 100%;
   h1 {
