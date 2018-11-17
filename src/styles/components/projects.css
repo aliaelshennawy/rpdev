@@ -2,6 +2,9 @@
   img {
     width: 100%;
   }
+  .white-section {
+    height: 100%;
+  }
 }
 .bold {
   font-weight: bold;
@@ -23,12 +26,6 @@
   background-repeat: no-repeat; 
 }
 
-/* Project 2 */
-.projects-2 {
-  .white-section {
-    padding-block: 40px; 
-  }
-}
 .title-2 {
   margin-block: 40px;
   font-size: 60px;
@@ -41,9 +38,22 @@
   display: block;
   text-align: right;
 }
-.projects-slider {
-  /* img {
-    min-height: 650px;
-    object-fit: contain;
-  } */
+.case-right {
+  img {
+    height: 400px;
+    object-fit: cover;
+  }
+  .title {
+    margin-left: 80px;
+  }
+  .content {
+    max-width: 500px;
+    margin-left: 80px;
+  }
+  .download-link {
+    margin-left: 80px;
+  }
+}
+.case-content {
+  margin-block: 10vh;
 }

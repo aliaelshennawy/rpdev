@@ -17,6 +17,7 @@
       height: 50px;
       border: 1px solid #848585;
       background-color: #0f0f0f; 
+      color: #fff;
     }
     .form-textarea {
       height: 100px;
@@ -24,6 +25,8 @@
       border: 1px solid #848585;
       background-color: #0f0f0f;
       resize: none; 
+      color: #fff;
+      padding-left: 10px; 
     }
   }
 }

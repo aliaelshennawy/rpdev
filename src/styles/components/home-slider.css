@@ -56,6 +56,7 @@
 .home-slider {
   .slick-arrow , .slick-prev {
     z-index: 1;
+    outline: none;
   }
   .slick-prev {
     left: 25px;
@@ -179,6 +180,7 @@
     object-fit: cover;
   }
   .slick-dots {
+    outline: none;
     position: absolute;
     right: 0;
     left: 50%;

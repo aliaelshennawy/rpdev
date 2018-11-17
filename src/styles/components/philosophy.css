@@ -65,6 +65,7 @@
       margin-bottom: 20px;
     }
     p {
+      font-size: 18px;
       overflow: hidden;
       color: #ccc;
     }
@@ -110,6 +111,7 @@
   box-shadow: -1000px 0 0 #101010, 1000px 0 0 #101010;
   padding-block: 80px;
   text-align: center;
+  font-size: 18px;
   @media (max-width: 1024px) {
     width: 100%;
     box-shadow: none;
@@ -126,7 +128,7 @@
   }
   .text-section p {
     max-width: 90%;
-    font-size: 16px;
+    font-size: 18px;
   }
   .text-bg-wrapper .bg-section-description {
     position: static;

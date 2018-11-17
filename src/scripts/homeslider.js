@@ -3,8 +3,12 @@ import Slick from 'slick-carousel';
 
 const homeSlider = {
   init() {
-    this.initializeHomeSlider();
-    this.initializeCapabilitiesSlider();
+    if ($('.home-slider').length > 0) {
+      this.initializeHomeSlider();
+    }
+    if ($('.random-images-container').length > 0) {
+      this.initializeCapabilitiesSlider();
+    }
     this.initializeProjectsSlider();
   },
   initializeHomeSlider() {
@@ -23,6 +27,7 @@ const homeSlider = {
             slidesToScroll: 1,
             dots: false,
             fade: false,
+            speed: 3000,
             focusOnSelect: true
           }
         },
