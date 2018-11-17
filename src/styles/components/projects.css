@@ -39,19 +39,40 @@
   text-align: right;
 }
 .case-right {
+  .not-desktop {
+    display: none;
+  }
+  @media (max-width: 1024px) {
+    .not-desktop {
+      display: block;
+    }
+    .desktop-only {
+      display: none;
+    }
+  }
   img {
     height: 400px;
     object-fit: cover;
   }
   .title {
     margin-left: 80px;
+    @media (max-width: 1024px) {
+      margin-left: 40px;
+    }
   }
   .content {
     max-width: 500px;
     margin-left: 80px;
+    @media (max-width: 1024px) {
+      margin-left: 40px;
+      max-width: 80%;
+    }
   }
   .download-link {
     margin-left: 80px;
+    @media (max-width: 1024px) {
+      margin-left: 40px;
+    }
   }
 }
 .case-content {
