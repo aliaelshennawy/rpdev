@@ -44,7 +44,7 @@ const homeSlider = {
       ]
     });
     $('.home-slider').on('afterChange', function(event, slick, currentSlide) {
-      if (currentSlide == 3) {
+      if (currentSlide == 1) {
         $('.home-slider').slick('slickPause');
         myVideo.play();
       }
