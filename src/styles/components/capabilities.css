@@ -26,6 +26,10 @@
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 55%, transparent);
   }
 }
+.full-width-image {
+  width: 100%;
+  margin-block: 60px;
+}
 .banner-content-wrapper {
   position: absolute;
   top: 70%;
@@ -73,10 +77,12 @@
 .grey-section-content + .grey-section-content {
   margin-top: 25px;
 }
+.grey-section-content .title {
+  margin-bottom: 20px;
+}
 .small-img {
   display: block;
   width: 80%;
-  margin-block: 40px; 
 }
 .small-img {
   width: 100%;

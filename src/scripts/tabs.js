@@ -39,13 +39,13 @@ const tabs = {
       }
     });
   },
+
   activateTab($tabContainer, index) {
     // Activate the tab handler
     const $tabs = $tabContainer.find(' > .tabs__container-links > ul.tabs');
     const $content = $tabContainer.find(' > .tabs__container-content');
     $tabs.find('li').removeClass('active-tab');
     $tabs.find(`li:eq(${index})`).addClass('active-tab');
-
     // Update ARIA and tabindex
     $tabs.find('a').attr({
       'aria-selected': false,
@@ -59,6 +59,18 @@ const tabs = {
     // Activate the content
     $content.find(' > .tab-content').prop('hidden', true);
     $content.find(` > .tab-content:eq(${index})`).prop('hidden', false);
+    $('.tab-title').click(function() {
+      if (index === 1) {
+        $('#iframe2').attr('src', $('#iframe2').attr('src'));
+        $('#iframe3').attr('src', $('#iframe3').attr('src'));
+      } else if (index === 2) {
+        $('#iframe1').attr('src', $('#iframe1').attr('src'));
+        $('#iframe3').attr('src', $('#iframe3').attr('src'));
+      } else {
+        $('#iframe1').attr('src', $('#iframe1').attr('src'));
+        $('#iframe2').attr('src', $('#iframe2').attr('src'));
+      }
+    });
   },
   generateIds($tabContainer) {
     const $tabs = $tabContainer.find(' > .tabs__container-links > ul.tabs');

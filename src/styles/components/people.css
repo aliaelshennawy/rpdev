@@ -94,6 +94,9 @@
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  .description {
+    font-size: 12px;
+  }
 }
 .people-contact-content {
   display: flex;
@@ -112,4 +115,8 @@
 .people-contact-wrapper {
   background: #fff;
   color: #000;
+}
+.people-small-row {
+  align-items: flex-start;
+  justify-content: left;
 }
