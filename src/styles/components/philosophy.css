@@ -121,6 +121,9 @@
 .phil-title {
   margin-bottom: 30px;
 }
+.gray-content-philo {
+  color: #ccc;
+}
 @media (max-width: 1024px) {
   .row {
     margin-right: 0;

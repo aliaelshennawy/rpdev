@@ -4,21 +4,22 @@ import Slick from 'slick-carousel';
 const homeSlider = {
   init() {
     if ($('.home-slider').length > 0) {
-      this.initializeHomeSlider();
+      this.timePerSlide();
     }
     if ($('.random-images-container').length > 0) {
       this.initializeCapabilitiesSlider();
     }
     this.initializeProjectsSlider();
   },
-  initializeHomeSlider() {
-    $('.home-slider').slick({
+  timePerSlide() {
+    var slider = $('.home-slider');
+
+    slider.slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: true,
       arrows: true,
       autoplay: true,
-      autoplaySpeed: 5000,
       responsive: [
         {
           breakpoint: 767,
@@ -27,7 +28,6 @@ const homeSlider = {
             slidesToScroll: 1,
             dots: false,
             fade: false,
-            speed: 3000,
             focusOnSelect: true
           }
         },
@@ -43,13 +43,34 @@ const homeSlider = {
         }
       ]
     });
-    $('.home-slider').on('afterChange', function(event, slick, currentSlide) {
-      if (currentSlide == 1) {
+
+    var durationList = $('.slider__item').map(function(index, item) {
+      return item.getAttribute('data-time');
+    });
+    console.log(durationList);
+    var slideIndex = 0;
+    var changeSlide = function(timing) {
+      setTimeout(function() {
+        if (timing !== 0) {
+          slider.slick('slickNext');
+        }
+        if (slideIndex >= durationList.length) slideIndex = 0;
+        changeSlide(durationList[slideIndex++]);
+      }, timing);
+    };
+    changeSlide(0);
+    $('.home-slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
+      if (currentSlide == 0) {
         $('.home-slider').slick('slickPause');
         myVideo.play();
       }
+      if (currentSlide == 2) {
+        $('.home-slider').slick('slickPause');
+        myVideo2.play();
+      }
     });
     document.getElementById('myVideo').addEventListener('ended', myHandler, false);
+    document.getElementById('myVideo2').addEventListener('ended', myHandler, false);
     function myHandler(e) {
       $('.home-slider').slick('slickPlay');
     }

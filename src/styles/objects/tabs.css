@@ -24,4 +24,7 @@
       color: #000;
     }
   }
+  .active-tab a:focus {
+    outline: none;
+  }
 }

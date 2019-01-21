@@ -120,3 +120,28 @@
   align-items: flex-start;
   justify-content: left;
 }
+@media (max-width: 767px) { 
+  .container .title-2 {
+    font-size: 35px;
+  }
+  .people-row {
+    padding: 0;
+    .col + .col {
+      margin-top: 20px;
+    }
+  }
+  .people-row + .people-row {
+    margin-bottom: 20px;
+  }
+  .people-row .row .col {
+    text-align: center;
+  }
+  .people-small-row .col{
+    &:nth-child(5) {
+      display: none;
+    }
+    &:last-child {
+      display: none;
+    }
+  }
+}

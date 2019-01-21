@@ -1,17 +1,20 @@
 .home-slider-wrapper
   ul.list.home-slider
-    li.slide
+    li.slide.slider__item(data-time="5000")
+      video.slider-video#myVideo
+        source(type="video/mp4" src="images/content/slide1-720.mp4" muted="muted" loop)
+      h1.to-uppercase.low-title Investing in People
+      p.large-title We lead by by serving, sacrificing, and mentoring both in-house and in-home with in our community and our team. 
+    li.slide.slider__item(data-time="21000")
       img.slider-image(src="images/home-1.jpg")
-      h1.to-uppercase RP Development
-      p Safety, Integrity, Teamwork and dedication, to ourselves and our customers.
-    li.slide
-      video.slider-image#myVideo
-        source(type="video/mp4" src="images/Homepage-small.mp4" loop) 
-    li.slide
-      img.slider-image(src="images/capabilities2.jpg")
+      h1.to-uppercase Rickabaugh Pentecost Development
+      p.large-title Safety, Integrity, Teamwork and dedication, to ourselves and our customers.
+    li.slide.slider__item(data-time="5000")
+      video.slider-video#myVideo2
+        source(type="video/mp4" src="images/content/slide2-720.mp4" muted="muted" loop)
       h1.to-uppercase Creating Partnerships
       p Delivering results consistently is not something that happens by accident or without effort, but it is something that happens every time
-    li.slide
+    li.slide.slider__item(data-time="13000")
       img.slider-image(src="images/home-2.jpg")
       h1.to-uppercase The Paradigm
       p With great attitudes come great teams with a passion for integrity dedicated to services. 
